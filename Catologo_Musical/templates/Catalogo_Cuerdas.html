@@ -1,0 +1,106 @@
+{% extends "Base.html" %}
+{% block titulo %}Catalogo{% endblock %}
+{% block body %}
+
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <a class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <span class="fs-5 d-none d-sm-inline">Instrumentos</span>
+        </a>
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link align-middle px-0">
+              <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Cuerda</span> </a>
+            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+              <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Frotada</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Percutida</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Pesada</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+              <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Percución</span></a>
+            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+              <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Determinados</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Indeterminados</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Vento</span> </a>
+            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+              <li class="w-100">
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Madera</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Metal</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="nav-link px-0 align-middle">
+              <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Electronicos</span> </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown pb-4">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="{{ url_for('static', filename='images/Vick.jpg') }}" alt="hugenerd" width="30" height="30"
+              class="rounded-circle">
+            <span class="d-none d-sm-inline mx-1">Victoria López</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shaceadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Carrito</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesición</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col py-3">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{{ url_for('static', filename='images/Instrumentos/Cuerdas/Pesada/Guitarra.jpg') }}" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Guitarra Acustica</h5>
+                <p class="card-text">$2,500.00</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="" class="btn btn-success">Agregar</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
