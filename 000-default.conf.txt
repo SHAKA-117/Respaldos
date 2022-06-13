@@ -1,23 +1,23 @@
 <VirtualHost *:80>
-ServerName flaskapp.dev
-WSGIDaemonProcess ejemplo_1 user=--- group=www-data threads=2
-WSGIScriptAlias / /var/www/html/---/run.wsgi
-<Directory /var/www/html--->
-WSGIProcessGroup ---
-WSGIApplicationGroup %{GLOBAL}
-Order deny,allow
-Allow from all
+ServerName catalogo.dev
+WSGIDaemonProcess Catalogo_Musical user=victoria group=www-data threads=2
+WSGIScriptAlias / /var/www/html/Respaldos/Catalogo_Musical/run.wsgi
+<Directory /var/www/html/Respaldos/Catalogo_Musical>
+  WSGIProcessGroup Catalogo_Musical
+  WSGIApplicationGroup %{GLOBAL}
+  Order deny,allow
+  Allow from all
 </Directory>
-Alias "/static/" "/var/www/html/---/static/"
-<Directory /var/www/html---/static/>
-Order allow,deny
-Allow from all
+Alias "/static/" "/var/www/html/Respaldos/Catalogo_Musical/static/"
+<Directory /var/www/html/Respaldos/Catalogo_Musical/static/>
+  Order allow,deny
+  Allow from all
 <Directory>
 
-Alias "/static/" "/var/www/html/---/templates/"
-Alias "/static/" "/var/www/html/----/templates/"
-Order allow,deny
-Allow from all
+Alias "/templates/" "/var/www/html/Respaldos/Catalogo_Musical/templates/"
+<Directory /var/www/html/Respaldos/Catalogo_Musical/templates/>
+  Order allow,deny
+  Allow from all
 <Directory>
 
 ErrorLog /var/www/html/error.log
