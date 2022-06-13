@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="../estilos/resgis.css">
+	
+</head>
+<body>
+	<header><h1>Usuarios Mayoritario</h1></header>
+	<form action="../scripts_de_control/control_usuario.php" method="POST" id="form1">
+	<fieldset>
+		<legend>Inicio de Sesion</legend>
+
+		<div>
+			<label for="usuario">Usuario</label>
+			<input type="text" name="usuario" id="usuario">
+		</div>
+		<div>
+			<label for="contraseña">Contraseña:</label>
+			<input type="password" name="contraseña" id="contraseña">
+		</div>
+		<div class="res">
+			<input type="submit" id="Enviar" value="Iniciar Sesion" >
+		</div>
+	</fieldset>
+	<div>
+	</div>
+</form>
+</body>
+</html>

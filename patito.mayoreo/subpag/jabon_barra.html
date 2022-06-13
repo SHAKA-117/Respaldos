@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>jabones_barra</title>
+	<meta charset="utf-8"/>
+	<meta name="title" content="Jabones_Barras">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../estilos/jb.css">
+</head>
+<body Id = "principal">
+	<header class="panesup">
+		<h1>
+			<form> 
+				<div class="busca"> 
+					<a href="../index.html"><img src="../iconos/DUCKNEATSLOGO.png"></a><input type="search" id="buscador" placeholder="Buscar Producto" required="required">
+				</div>
+				<div class="btbusca">
+					<button type="submit">Buscar</button>
+				</div>
+				<div class="carrito"> 
+					<a><img src="../iconos/carrito.png"></a>
+				</div>
+				<div class="loggin">
+					<button onclick="location.href='loggin.html'">Loggin</button>
+					<button onclick="location.href='registro_usuarios.html'">Register</button>
+				</div>
+			</form>
+		</h1>
+	</header>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">Productos</a>
+					<ul class="submenu">
+						<li><a href="jabon_barra.html">Jabon de Barra</a></li>
+						<li><a href="jabon_liquido_baño.html">Jabon liquido para baño</a></li>
+						<li><a href="jabon_liquido_manos.html">Jabon liquido para manos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<div class="panel1">
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/escudobarra.jpg"></a></div>	
+				<div class="panetexo"><p id="producto">Escudo Barra</p></div>
+				<div class="paneprecio"><p id="precio">10.00</p></div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10" id="cantidad">
+				</div>
+				<div class="btin">
+					<button type="button" name="button" onclick="optener()">Comprar</button>
+				</div>			
+			</div>
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/dove.jpg"></a></div>	
+				<div class="panetexo"><p id="producto">Dove</p></div>
+				<div class="paneprecio"><p id="precio">$12.00</p></div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin">
+					<button type="button" name="button" onclick="optener()">Comprar</button>
+				</div>
+			</div>
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/jabon123.jpg"></a></div>	
+				<div class="panetexo">123</div>
+				<div class="paneprecio">$15.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/jaboneutro.jpg"></a></div>	
+				<div class="panetexo">Jabon Neutro</div>
+				<div class="paneprecio">$20.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/jabonkleenexbarra.jpg"></a></div>	
+				<div class="panetexo">Jabon Kleenex</div>
+				<div class="paneprecio">$15.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro1">
+				<div class="paneimagen"><a href=""><img src="../caratulas/lirio.jpg"></a></div>	
+				<div class="panetexo">Lirio</div>
+				<div class="paneprecio">$10.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+		</div>
+		<div class="panel2">
+			<div class="cuadro2">
+				<div class="paneimagen"><a href=""><img src="../caratulas/maja.jpg"></a></div>	
+				<div class="panetexo">Jabon Maja</div>
+				<div class="paneprecio">$25.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro2">
+				<div class="paneimagen"><a href=""><img src="../caratulas/panmolive.jpg"></a></div>	
+				<div class="panetexo">Panmolive barra</div>
+				<div class="paneprecio">$15.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro2">
+				<div class="paneimagen"><a href=""><img src="../caratulas/zest.jpg"></a></div>	
+				<div class="panetexo">Zest</div>
+				<div class="paneprecio">$10.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro2">
+				<div class="paneimagen"><a href=""><img src="../caratulas/zoteblanco.jpg"></a></div>	
+				<div class="panetexo">Zote Blanco</div>
+				<div class="paneprecio">$13.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+			<div class="cuadro2">
+				<div class="paneimagen"><a href=""><img src="../caratulas/zoterosa.jpg"></a></div>	
+				<div class="panetexo">Zote Rosa</div>
+				<div class="paneprecio">$13.00</div>	
+				<div class="innum"><input type="number" name="num" value="1" min="1" max="10">
+				</div>
+				<div class="btin"><input type="submit" name="comp" value="Comprar">
+				</div>
+			</div>
+		</div>
+	</article>
+	<script type="text/javascript" src="../scripts_de_control/funciones.js"></script>
+</body>
+</html>
