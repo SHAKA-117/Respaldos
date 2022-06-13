@@ -1,0 +1,26 @@
+<VirtualHost *:80>
+ServerName flaskapp.dev
+WSGIDaemonProcess ejemplo_1 user=--- group=www-data threads=2
+WSGIScriptAlias / /var/www/html/---/run.wsgi
+<Directory /var/www/html--->
+WSGIProcessGroup ---
+WSGIApplicationGroup %{GLOBAL}
+Order deny,allow
+Allow from all
+</Directory>
+Alias "/static/" "/var/www/html/---/static/"
+<Directory /var/www/html---/static/>
+Order allow,deny
+Allow from all
+<Directory>
+
+Alias "/static/" "/var/www/html/---/templates/"
+Alias "/static/" "/var/www/html/----/templates/"
+Order allow,deny
+Allow from all
+<Directory>
+
+ErrorLog /var/www/html/error.log
+CustomLog /var/www/html/error.log
+<VirtualHost>
+
